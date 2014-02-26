@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+function limita(maximoCaracteres) {
+ var elemento = document.getElementById("texto");
+ if(elemento.value.length >= maximoCaracteres ) {
+   return false;
+   }
+ else {
+   return true;
+   }
+}
+
+
+
+
+function comprueba(){
+
+var cuadrotxt = document.getElementById("elemento");
+
+alert ("value; "+cuadrotxt.value+"\n type: "+cuadrotxt.type+"\n name: "+cuadrotxt.name);
+
+
+alert ("elemento2: "+cuadrotxt.form.elemento2.value);
+
+
+}
+
+
+window.onload=function(){
+
+if(document.forms.length > 0) {
+  if(document.forms[0].elements.length > 0) {
+   document.forms[0].elements[0].focus();
+  }
+}
+
+
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<form name="formulario" id="formulario" >
+<input type="text" name="elemento" id="elemento" />
+<input type="text" name="elemento2" id="elemento2" />
+<textarea id="texto" onkeypress="return limita(100);"></textarea>
+
+
+
+
+
+<input type="button" value="Enviar" onclick="this.disabled=true;this.value='enviando...';comprueba()" />
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
+

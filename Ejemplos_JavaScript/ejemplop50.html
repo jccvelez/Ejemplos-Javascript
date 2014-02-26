@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+
+var sigue=true;
+
+
+while(sigue)
+ {
+ var lee=parseInt(prompt("Dame un numero (1-5)"));
+
+ switch(lee) {
+  case 1:
+    alert ("Has escrito un uno"); 
+    sigue=false;
+  break;
+
+  case 2:
+    alert ("Has escrito un dos");
+    sigue=false;
+  break;
+
+  case 3:
+    alert ("Has escrito un tres");
+    sigue=false;
+  break;
+
+  case 4:
+    alert ("Has escrito un cuatro");
+    sigue=false;
+  break;
+
+  case 5:
+    alert ("Has escrito un cinco");
+    sigue=false;
+  break;
+
+
+  default:
+    alert ("Numero no valido");  
+    sigue=true;   //no hace falta
+  break;
+ }
+
+}
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+<noscript>
+<p>Bienvenido a Mi Sitio</p>
+<p>La pÃ¡gina que estÃ¡s viendo requiere para su funcionamiento el uso de JavaScript.
+Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+</noscript>
+
+
+
+<p>Un parrafo de texto.</p>
+</body>
+</html>
+

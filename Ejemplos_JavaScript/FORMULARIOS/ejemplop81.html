@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+function comprueba(){
+
+var elementos = document.getElementsByName("pregunta");
+final=""
+for(var i=0; i<elementos.length; i++) {
+/*alert(" Elemento: " + elementos[i].value + "\n Seleccionado: " +
+elementos[i].checked);*/
+	final=final+"elemento: "+elementos[i].value+" Seleccionado: " +elementos[i].checked+"\n"
+}
+
+alert(final)
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<form name="formulario" id="formulario" >
+<input type="radio" value="si" name="pregunta" id="pregunta_si"/> SI
+<input type="radio" value="no" name="pregunta" id="pregunta_no"/> NO
+<input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc"/> NS/NC
+
+
+<input type="button" value="Enviar" onclick="comprueba()" />
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
+

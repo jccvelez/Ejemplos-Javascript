@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ejercicio 13 </title>
+ 
+<script type="text/javascript">
+
+
+function resalta(elEvento) {
+var evento = elEvento || window.event;
+
+switch(evento.type) {
+case 'mouseover':
+this.style.borderColor = 'red';
+break;
+
+case 'mouseout':
+this.style.borderColor = 'green';
+break;
+
+case 'click':
+this.style.color = 'red';
+break;
+
+
+
+}
+
+}
+
+
+
+window.onload = function() {
+document.getElementById("boton").onmouseover = resalta;
+document.getElementById("boton").onmouseout = resalta;
+document.getElementById("boton").onclick = resalta;
+}
+
+
+
+
+</script>
+</head>
+ 
+<body>
+ 
+<p id="parrafo">Creado por Jose Cristian, esto en un parrafo,loremp ipsummmmma alerarjjrjr  kenr</p>
+
+
+ 
+<input id="boton" type="button" value="mostrar otro parrafo">
+
+</body>
+</html>

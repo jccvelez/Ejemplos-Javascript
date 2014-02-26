@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+function comprueba(){
+
+// Obtener la referencia a la lista
+var lista = document.getElementById("opciones");
+// Obtener el Ã­ndice de la opciÃ³n que se ha seleccionado
+
+var indiceSeleccionado = lista.selectedIndex;
+// Con el Ã­ndice y el array "options", obtener la opciÃ³n seleccionada
+
+var opcionSeleccionada = lista.options[indiceSeleccionado];
+// Obtener el valor y el texto de la opciÃ³n seleccionada
+
+
+
+var textoSeleccionado = opcionSeleccionada.text;
+
+var valorSeleccionado = opcionSeleccionada.value;
+
+alert("OpciÃ³n seleccionada: " + textoSeleccionado + "\n Valor de la opciÃ³n: " +
+valorSeleccionado+ "indice"+ indiceSeleccionado);
+
+
+
+
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<form name="formulario" id="formulario" >
+
+
+
+<select id="opciones" name="opciones">
+<option value="10">Primer valor</option>
+<option value="20">Segundo valor</option>
+<option value="30">Tercer valor</option>
+<option value="40">Cuarto valor</option>
+</select>
+
+
+
+
+
+
+<input type="button" value="Enviar" onclick="comprueba()" />
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
+

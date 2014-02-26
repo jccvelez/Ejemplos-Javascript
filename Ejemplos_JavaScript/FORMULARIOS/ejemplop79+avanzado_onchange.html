@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+function comprueba(){
+
+var cuadrotxt = document.getElementById("elemento");
+
+alert ("value; "+cuadrotxt.value+"\n type: "+cuadrotxt.type+"\n form:\n name: "+cuadrotxt.name);
+
+
+alert ("elemento2: "+cuadrotxt.form.elemento2.value);
+
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<form name="formulario" id="formulario" >
+<input type="text" name="elemento" id="elemento" onchange="comprueba()"/>
+<input type="text" name="elemento2" id="elemento2" />
+
+<input type="button" value="Enviar" onclick="comprueba()" />
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
+

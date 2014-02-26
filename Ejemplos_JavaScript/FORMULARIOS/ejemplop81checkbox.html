@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de cÃ³digo JavaScript en el propio documento</title>
+
+<script type="text/javascript">
+function comprueba(){
+
+var elemento = document.getElementById("condiciones");
+alert(" Elemento: " + elemento.value + "\n Seleccionado: " + elemento.checked);
+
+elemento = document.getElementById("privacidad");
+alert(" Elemento: " + elemento.value + "\n Seleccionado: " + elemento.checked);
+
+}
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<form name="formulario" id="formulario" >
+
+
+
+<input type="checkbox" value="condiciones" name="condiciones" id="condiciones"/> He
+leÃ­do y acepto las condiciones
+<input type="checkbox" value="privacidad" name="privacidad" id="privacidad"/> He leÃ­do la polÃ­tica de privacidad
+
+
+
+
+
+
+<input type="button" value="Enviar" onclick="comprueba()" />
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
+
